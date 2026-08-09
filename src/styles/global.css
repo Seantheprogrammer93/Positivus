@@ -29,7 +29,8 @@
   }
 
   :root {
-    --green: #b9ff66;
+    --green: #00FF44;
+    --blue: rgb(0, 0, 255);
     --black: rgb(0, 0, 0);
     --dark: #191a23;
     --gray: #f3f3f3;
@@ -156,6 +157,15 @@
 .content p {
   margin: 20px 0;
   font-size: 1.1rem;
+}
+
+.content a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.content a:hover {
+  color: var(--black);
 }
 
 .content h2 {
