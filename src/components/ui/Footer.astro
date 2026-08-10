@@ -4,7 +4,6 @@ import Facebook from "../../assets/facebook.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import Logo from "../../assets/logo-alt.svg";
 import Twitter from "../../assets/twitter.svg";
-import ShortForm from "../ui/ShortForm.astro";
 
 const logos = [
   { name: "Facebook", src: Facebook, link: "https://facebook.com" },
@@ -69,20 +68,15 @@ const currentYear = new Date().getFullYear();
           </ul>
         </div>
 
-        <div class="flex flex-col lg:flex-row mt-[66px] mb-[51px]">
-          <div
-            class="flex text-center lg:text-start flex-col w-full lg:w-[30%]"
-          >
-            <h3 class="mb-5 text-center md:text-left text-2xl text-green">
+        <div class="flex flex-col mt-[66px] mb-[51px] items-center">
+          <div class="flex text-center flex-col">
+            <h3 class="mb-5 text-2xl text-green">
               Contact us
             </h3>
             <div class="flex flex-col justify-between gap-4">
               <span> Email: contact@polygonpayments.com </span>
               <span> Phone: +1 (888) 536-6002 </span>
             </div>
-          </div>
-          <div class="flex-grow my-10 lg:my-0 lg:ml-12">
-            <ShortForm />
           </div>
         </div>
       </div>
