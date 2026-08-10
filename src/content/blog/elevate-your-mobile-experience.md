@@ -5,7 +5,7 @@ author: 'Bonnie Green'
 authImage: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png'
 image: 'image3.png'
 tags: ['samsung', 'smartphones', 'gadgets']
-slug: elevate-your-mobile-experience-with-samsung
+slug: our-first-project-with-astro
 summary: "In the ever-evolving world of mobile technology, Samsung has consistently delivered cutting-edge devices that redefine the way we experience the digital world."
 type: "Article"
 ---

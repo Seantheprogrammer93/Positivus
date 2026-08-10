@@ -5,7 +5,7 @@ author: 'Polygon Payments'
 authImage: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png'
 image: 'image4.png'
 tags: ['photography', 'canon', 'tech']
-slug: capturing-lifes-moments-with-canon-excellence
+slug: why-is-my-payment-processor-holding-my-money
 summary: "Why Is My Payment Processor Holding My Money? (7 Common Reasons)"
 type: "Article"
 ---
