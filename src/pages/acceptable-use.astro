@@ -1,0 +1,103 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+const lastUpdated = "August 10, 2026";
+
+const prohibitedBusinesses = [
+	"Adult content / escort / online dating",
+	"Payday lending",
+	"Counterfeit goods",
+	"Marijuana / Delta-9 THC > 0.3%",
+	"Crypto exchanges / ICOs",
+	"Negative option billing / free trials",
+	"Money service businesses",
+	"Payment facilitators / e-wallets",
+	"Debt buyers (charged-off debt)",
+	"Synthetically derived CBD (Delta-8 / Delta-10)",
+	"Kratom with 7OH / Kratom as primary product",
+	"CNP tobacco / vape",
+	"Gambling / betting / lottery",
+	"Sweepstakes",
+	"Timeshare exit / deed transfer",
+];
+
+const sections = [
+	{
+		title: "1. Purpose",
+		body: "This Acceptable Use Policy (\"Policy\") outlines the activities and business categories that are prohibited when using the services provided by Polygon Payments LLC (\"Polygon Payments\", \"we\", \"us\", or \"our\"). This Policy is incorporated into and forms part of our Terms of Service.",
+	},
+	{
+		title: "2. General Requirements",
+		body: "You agree to use our payment processing and related services only for lawful purposes and in accordance with all applicable laws, regulations, and card network rules. You are responsible for ensuring that your business and transactions comply with these requirements at all times.",
+	},
+	{
+		title: "4. Enforcement",
+		body: "We may suspend or terminate your access to the services at any time if we determine, in our sole discretion, that your business or use of the services violates this Policy or is prohibited by our banking partners, card networks, or applicable law.",
+	},
+	{
+		title: "5. Changes to This Policy",
+		body: "We may update this Acceptable Use Policy from time to time. Continued use of the services after changes take effect constitutes acceptance of the revised Policy.",
+	},
+	{
+		title: "6. Contact Us",
+		body: "If you have any questions about this Acceptable Use Policy, please contact us at contact@polygonpayments.com or +1 (888) 536-6002.",
+	},
+];
+---
+
+<MainLayout title="Acceptable Use Policy">
+	<main class="space-y-20">
+		<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-3">
+			<div class="space-y-6">
+				<h1 class="text-5xl font-medium leading-none md:text-6xl">
+					Acceptable Use Policy
+				</h1>
+				<p class="text-lg text-gray-600">Last updated: {lastUpdated}</p>
+			</div>
+
+			<div class="mt-12 space-y-10">
+				<section class="space-y-3">
+					<h2 class="text-2xl font-medium leading-tight md:text-3xl">
+						{sections[0].title}
+					</h2>
+					<p class="text-lg font-normal leading-7">{sections[0].body}</p>
+				</section>
+
+				<section class="space-y-3">
+					<h2 class="text-2xl font-medium leading-tight md:text-3xl">
+						{sections[1].title}
+					</h2>
+					<p class="text-lg font-normal leading-7">{sections[1].body}</p>
+				</section>
+
+				<section class="space-y-3">
+					<h2 class="text-2xl font-medium leading-tight md:text-3xl">
+						3. Prohibited Businesses
+					</h2>
+					<p class="text-lg font-normal leading-7">
+						Polygon Payments does not work with the following business
+						categories:
+					</p>
+					<ul class="ml-6 space-y-2 list-disc">
+						{
+							prohibitedBusinesses.map((item) => (
+								<li class="text-lg font-normal leading-7">{item}</li>
+							))
+						}
+					</ul>
+				</section>
+
+				{
+					sections.slice(2).map((section) => (
+						<section class="space-y-3">
+							<h2 class="text-2xl font-medium leading-tight md:text-3xl">
+								{section.title}
+							</h2>
+							<p class="text-lg font-normal leading-7">{section.body}</p>
+						</section>
+					))
+				}
+			</div>
+		</div>
+	</main>
+</MainLayout>
