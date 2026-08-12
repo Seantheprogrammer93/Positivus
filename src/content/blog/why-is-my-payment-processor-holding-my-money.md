@@ -22,6 +22,7 @@ A sudden increase in sales volume or unusually large transactions can cause a pa
 
 ## **3. Industry Risk Level**
 
+Sometimes payment processors freeze your funds simply because they lack the appetite for certian industries or business models due to chargebakc rations, fraud, or special underwriting requirements that aggregarots cannot perform.
 
 ## **4. High Chargeback Ratios**
 
